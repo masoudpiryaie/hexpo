@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Image, TouchableOpacity, Button, StyleSheet, Pressable } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import * as Permissions from 'expo-permissions';
+// import * as Permissions from 'expo-permissions';
 import { useFormData } from '../../../services/FormDataContext/FormDataContext';
 
 const IdCardInfo = () => {
@@ -9,19 +9,19 @@ const IdCardInfo = () => {
     const [frontPhoto, setFrontPhoto] = useState(null);
     const [backPhoto, setBackPhoto] = useState(null);
 
-    useEffect(() => {
-        requestPermissions();
-    }, []);
+    // useEffect(() => {
+    //     requestPermissions();
+    // }, []);
 
-    const requestPermissions = async () => {
-        const { status: cameraStatus } = await Permissions.askAsync(Permissions.CAMERA);
-        const { status: mediaStatus } = await Permissions.askAsync(Permissions.MEDIA_LIBRARY);
+    // const requestPermissions = async () => {
+    //     const { status: cameraStatus } = await Permissions.askAsync(Permissions.CAMERA);
+    //     const { status: mediaStatus } = await Permissions.askAsync(Permissions.MEDIA_LIBRARY);
 
-        if (cameraStatus !== 'granted' || mediaStatus !== 'granted') {
-            // Handle permissions not granted
-            console.log('Permissions not granted');
-        }
-    };
+    //     if (cameraStatus !== 'granted' || mediaStatus !== 'granted') {
+    //         // Handle permissions not granted
+    //         console.log('Permissions not granted');
+    //     }
+    // };
 
     const handleFrontPhotoUpload = async () => {
         const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
