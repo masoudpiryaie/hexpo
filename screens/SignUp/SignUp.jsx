@@ -8,7 +8,7 @@ import BankAccountInfo from './BankAccountInfo';
 // import { Form, FormikProvider } from "formik";
 import DisplayFormData from "./DisplaySignUpFormData/DisplaySignUpFormData";
 import { FormDataProvider, useFormData } from "../../services/FormDataContext/FormDataContext";
-// import IdCardInfo from "./IdCardUpload/IdCardUpload";
+import IdCardInfo from "./IdCardUpload/IdCardUpload";
 import CustomCheckbox from "../../components/Checkbox/Checkbox";
 import Login from "../Login";
 import Thanks from "./Thanks/Thanks";
@@ -69,7 +69,7 @@ const SignUp = () => {
                     {step === 1 && <PersonalInfo />}
                     {step === 2 && <ContactInfo />}
                     {step === 3 && <BankAccountInfo />}
-                    {/* {step === 4 && <IdCardInfo />} */}
+                    {step === 4 && <IdCardInfo />}
                     {step === 5 && <DisplayFormData formData={formData} />}
                     {step === 6 && <Thanks />}
                 </View>

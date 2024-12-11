@@ -1,7 +1,7 @@
 // HomeScreen.js
 
 import React, { useEffect, useLayoutEffect, useState } from 'react';
-import { View, Text, SafeAreaView, StyleSheet, TouchableOpacity, TouchableWithoutFeedback, ActivityIndicator, Pressable, Image, Button, Alert } from 'react-native';
+import { View, Text, SafeAreaView, StyleSheet, TouchableOpacity, TouchableWithoutFeedback, ActivityIndicator, Pressable, Image, Button } from 'react-native';
 import Icon from '../../components/Icon/Icon';
 import axios from 'axios';
 import { useFormData } from '../../services/FormDataContext/FormDataContext'
@@ -20,7 +20,6 @@ import { useUserContext } from "../../services/AuthContext/AuthContext";
 import { ScrollView } from 'react-native-gesture-handler';
 import ReactNativeModal from 'react-native-modal';
 // import { useUserContext } from "../../services/AuthContext/AuthContext";
-// import Modal from "react-native-modal";
 import Modal from "react-native-modal";
 
 
@@ -121,13 +120,8 @@ const HomeScreen = ({ shop, navigation }) => {
     }
 
     // if (error) {
-    //     return (
-    //         <>
-    //             <Alert>fd</Alert>
-    //         </>
-    //     )
+    //     return <Text>{error}</Text>;
     // }
-
     // if (error) {
     //     return (
 

@@ -34,9 +34,6 @@ const ScreenNavigation = () => {
 }
 
 const DashBoard = () => {
-    <>
-        {/* <Text>dfdssdfsf</Text> */}
-    </>
     // const [isDrawerOpen, setDrawerOpen] = useState(false); // State to manage drawer open/close
 
     // const renderHeader = (navigation, title) => {
